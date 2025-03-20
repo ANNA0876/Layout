@@ -4,9 +4,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title></title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Ut Sa Ha Gumm Thai', sans-serif;
+        }
+
+        .spaziatura {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        header {
+            background-color: aliceblue;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 2%;
+            align-items: center;
+        }
+
+        nav > ul {
+        }
+
+            nav > ul > li {
+                list-style: none;
+                display: inline;
+                margin-left: 8px;
+            }
+
+                nav > ul > li > button {
+                    background-color: #000000;
+                    color: white;
+                    border-radius: 3px;
+                }
+
+        .menu-icon {
+            display: none;
+            background-color: #000000;
+            color: white;
+            border-radius: 3px;
+        }
+        /*input questa mediaquery facciamo che alcune proprietà avvengano fino a 800px*/
+        @media(max-width: 800px) {
+            .menu-icon {
+                display: block;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Layout1</h1>
+    <header>
+        <div class="spaziatura header">
 
+            <h4>Site name</h4>
+            <button class="menu-icon">☰</button> <!--mi serve per creare il menu a scomparsa(effetto burger)-->
+            <nav>
+                <ul>
+                    <li>Page</li>
+                    <li>Page</li>
+                    <li>Page</li>
+                    <li><button>Button</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
