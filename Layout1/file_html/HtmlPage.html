@@ -21,7 +21,6 @@
             margin-bottom: 20px;
         }
 
-        /*.header per creare un unico blocco colore sub tutta label pagina in altezza*/
         .header {
             display: flex;
             justify-content: space-between;
@@ -42,15 +41,15 @@
                     color: white;
                     border-radius: 3px;
                 }
-        /*caratteristiche di menu-incon (icona voci)*/
+
         .menu-icon {
             display: none;
             background-color: #000000;
-            color: white;
+            color: #ffffff;
             border-radius: 3px;
         }
 
-        .buttonstyle {
+        .button-style {
             background-color: #000000;
             color: white;
             border-radius: 3px;
@@ -62,6 +61,7 @@
         #main-product {
             display: flex;
             justify-content: space-between;
+            gap: 100px;
         }
 
             #main-product div {
@@ -82,21 +82,34 @@
             gap: 20px;
         }
 
-
-
         .img-main {
             border-radius: 35px;
             overflow: hidden;
         }
-            /*gestisce l'immagine nel main*/
+
             .img-main img {
                 width: 100%;
-                max-height: 50vh;
+                max-height: 60vh;
                 object-fit: contain;
             }
 
-        /*input questa mediaquery facciamo che alcune proprietà avvengano fino a 800px*/
-        @media(max-width: 800px) {
+        .products-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /*gap: 20px;*/
+        }
+
+        .product-item {
+            /*flex: 1 1 calc(33.33% -20px);*/
+            width: 300px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        @media (max-width: 800px) {
             .menu-icon {
                 display: block;
             }
@@ -113,11 +126,11 @@
     </style>
 </head>
 <body>
+
     <header>
         <div class="spaziatura header">
-
-            <h4>Site name</h4>
-            <button class="menu-icon">☰</button> <!--mi serve per creare il menu a scomparsa(effetto burger)-->
+            <h4>Site Name</h4>
+            <button class="menu-icon">☰</button>
             <nav>
                 <ul>
                     <li>Page</li>
@@ -134,6 +147,7 @@
                 <img src="img/Image.png" alt="#" />
             </div>
             <div class="description-main">
+                <h3>Product Name</h3>
                 <span class="subtitle">
                     Subheading
                 </span>
@@ -151,7 +165,7 @@
         </div>
         <div id="main-related">
             <h3>Related products</h3>
-            <div class="products-List">
+            <div class="products-list">
                 <div class="product-item">
                     <img src="img/Image (10).png" alt="#" />
                     <span class="title">Product</span>
@@ -191,6 +205,7 @@
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
 </body>
 </html>
