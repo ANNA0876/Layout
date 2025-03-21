@@ -102,11 +102,20 @@
 
         .product-item {
             /*flex: 1 1 calc(33.33% -20px);*/
-            width: 30%;
+            flex: 1 1 400px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
             padding: 10px;
+            min-width: 30%;
+        }
+
+            .product-item img {
+                width: 100%;
+            }
+
+        #img2 {
+            display: none;
         }
 
         @media (max-width: 800px) {
@@ -122,25 +131,38 @@
                 flex-direction: column;
                 gap: 0;
             }
-        }
 
-        @media (min-width:651px) and (max-width:1000px) {
+            #img1 {
+                display: none;
+            }
 
+            #img2 {
+                display: block;
+            }
 
-            .product-item {
-                /*flex: 1 1 calc(33.33% -20px);*/
-                width: 50%;
+            .product-item img{
+                height: 30vh;
             }
         }
 
-        @media (max-width:650px) {
-            .product-item {
-                /*flex: 1 1 calc(33.33% -20px);*/
-                width: 100%;
-                padding: 0;
-                margin-bottom: 10px;
+
+        /*@media (min-width:651px) and (max-width:1000px)
+        {
+            .product-item {*/
+        /*flex: 1 1 calc(33.33% -20px);*/
+        /*width: 50%;
             }
         }
+        @media (max-width:650px)
+        {
+            .product-item {*/
+        /*flex: 1 1 calc(33.33% -20px);*/
+        /*width: 100%;
+                padding:0;
+                margin-bottom:10px;
+            }
+        }*/
+
     </style>
 </head>
 <body>
@@ -185,37 +207,37 @@
             <h3>Related products</h3>
             <div class="products-list">
                 <div class="product-item">
-                    <img src="img/Image (10).png" alt="#" />
+                    <img src="img/Image (1).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="img/Image (10).png" alt="#" />
+                    <img src="img/Image (2).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="img/Image (10).png" alt="#" />
+                    <img src="img/Image (3).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="img/Image (10).png" alt="#" />
+                    <img src="img/Image (4).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="img/Image (10).png" alt="#" />
+                    <img src="img/Image (5).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
                 </div>
                 <div class="product-item">
-                    <img src="img/Image (10).png" alt="#" />
+                    <img src="img/Image (6).png" alt="#" />
                     <span class="title">Product</span>
                     <span class="subtitle">Description of n product</span>
                     <span class="price">$10.99</span>
